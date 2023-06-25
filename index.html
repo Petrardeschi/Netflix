@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6b4e979930.js" crossorigin="anonymous"></script>
+    <title>Netflix mockup</title>
+</head>
+<body class="bg-dark">
+  <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="netflix-logo" src="imgs/Netflix_Logo_RGB.png" alt="logo_netflix"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex align-items-center">
+              <i class="fa-solid fa-magnifying-glass text-light search-lens me-4"></i>
+              <span class="me-4" style="color: #ffffff;">KIDS</span>
+              <i class="fa-solid fa-bell me-3" style="color: #ffffff;"></i>
+              <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle pic-profile" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img
+                    src="imgs/avatar.png"
+                    alt="user_icon"
+                    class="user-icon me-2">
+                    </button>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- TITLE AREA -->
+      <main>
+        <div class="title-area d-flex me-4 justify-content-between">
+          <div class="d-flex title-items">
+              <h2 class="mt-4 me-2">TV Shows</h2>
+              <div class="dropdown">
+                  <button class="btn button-title dropdown-toggle m-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Genres
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+              </div>
+          </div>
+
+          <div class="icon-items d-flex align-items-center">
+              <button type="button" class="btn-icon btn btn-outline-secondary p-1">
+                  <i class="fa-solid fa-list h-5" style="color: #ffffff;"></i>
+              </button>
+              <button type="button" class="btn-icon btn btn-outline-secondary p-1">
+                  <i class="fa-solid fa-table-cells-large" style="color: #ffffff;"></i>
+              </button>
+                  
+              
+              
+          </div>
+        </div>
+        <!-- SECTION 3: CARD AREA -->
+        <div class="container-fluid mt-5">
+          <h3 class="mx-1 mt-4">Trending now</h3>
+          <div class="row d-flex justify-content-between flex-nowrap overflow-hidden g-0 p-2 mt-2 movie-row" id="movie-trend">
+            <div class="card me-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/1.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card mx-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/2.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card mx-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/3.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card mx-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/4.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card mx-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/5.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/6.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/1.png" alt="movies">
+              <div class="movie-hidden"></div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container-fluid mt-5">
+          <h3 class="mx-1 mt-4">Watch it again</h3>
+          <div class="row d-flex justify-content-between flex-nowrap overflow-hidden g-0 p-2 mt-2 movie-row" id="movie-again">
+            <div class="card me-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/7.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card mx-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/8.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card mx-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/9.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card mx-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/10.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card mx-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/11.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/12.png" class="card-img-top" alt="movies">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container-fluid mt-5">
+          <h3 class="mx-1 mt-4">New releases</h3>
+          <div class="row d-flex justify-content-between flex-nowrap overflow-hidden g-0 p-2 mt-2 movie-row" id="movie-releases">
+            <div class="card me-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/13.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card mx-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/14.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card mx-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/15.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card mx-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/16.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card mx-1 col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/17.png" class="card-img-top" alt="movies">
+            </div>
+            <div class="card col-xl-2 col-md-3 col-6 movie-card">
+              <img src="imgs/movies/18.png" class="card-img-top" alt="movies">
+            </div>
+          </div>
+        </div>
+
+        <!-- AREA FOOTER -->
+        <div class="container d-flex flex-column footer-container">
+          <div class="footer d-flex">
+            <div class="footer-item d-flex flex-column me-5 flex-nowrap">
+              <span>Audio and subtitles</span>
+              <span>Media center</span>
+              <span>Privacy</span>
+              <span>Contact us</span>
+            </div>
+            <div class="footer-item d-flex flex-column mx-5 flex-nowrap ">
+              <span>Audio and subtitles</span>
+              <span>Media center</span>
+              <span>Privacy</span>
+            </div>
+            <div class="footer-item d-flex flex-column mx-5 flex-nowrap">
+              <span>Audio and subtitles</span>
+              <span>Media center</span>
+              <span>Privacy</span>
+            </div>
+            <div class="footer-item d-flex flex-column ms-5 flex-nowrap">
+              <span>Audio and subtitles</span>
+              <span>Media center</span>
+              <span>Privacy</span>
+            </div>
+          </div>
+            <div class="mt-3">
+              <button type="button" class="btn btn-footer">Service code</button>
+            </div>
+            <footer class="footer-copyright mt-3">
+              &copy; 1997-2019 Netflix, Inc. (i-Odghffskcvbchse)
+            </footer>
+        </div>
+      </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
+</body>
+</html>
